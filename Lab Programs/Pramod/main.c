@@ -3,6 +3,12 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    int a,b;
+
+    printf("Enter the Number: ");
+    scanf("%d", &a);
+
+
+    printf("You Entered Num: %d", a);
     return 0;
 }
