@@ -3,12 +3,9 @@
 
 int main()
 {
-    int a,b;
 
-    printf("Enter the Number: ");
-    scanf("%d", &a);
+    char ch = -100;
 
-
-    printf("You Entered Num: %d", a);
+    printf("%c", ch);
     return 0;
 }
