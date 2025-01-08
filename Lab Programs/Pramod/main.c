@@ -1,14 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 int main()
 {
 
     char op;
-    double a;
-    double b, res;
+    double a, b, result;
 
-    printf("Simple Calculator:\n");
+    printf("Simple Calculator\n");
     printf("Choose an operation:\n");
     printf(" + : Addition\n");
     printf(" - : Subtraction\n");
@@ -17,33 +14,28 @@ int main()
     printf(" %% : Modulus (for integers only)\n");
 
 
-    printf("Enter the operator: ");
+
+    printf("Please Enter a Valid Operator: ");
     scanf("%c", &op);
 
     printf("Enter the 1st Number: ");
-    scanf("%lf", &a);
+    scanf("%f", &a);
 
     printf("Enter the 2nd Number: ");
-    scanf("%lf", &b);
+    scanf("%f", &b);
+
 
 
     if(op == '+'){
-
-        res = a + b;
-
-        printf("Sum is: %.2lf", res);
-    }
-    else if( op == '-'){
-        res = a - b;
-
-        printf("Substraction is: %.2lf", res);
-    }
-    else {
-        printf("ENter a Valid Operator");
+        result = a + b;
+        printf("Output: Addition of %.2f + %.2f = %.2f",a, b, result);
     }
 
+    else if(op == '-'){
+        result = a - b;
+        printf("Output: Substraction of %.2f - %.2f = %.2f",a, b, result);
 
-
+    }
 
 
     return 0;
